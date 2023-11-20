@@ -61,9 +61,9 @@ Route::group(
     ['middleware' => ['auth'], 'prefix' => 'account', 'namespace' => 'Website\Account'],
     function () {
         Route::get('/', 'AccountController@index')->name('account');
-        // Route::get('/profile', 'ProfileController@index')->name('profile');
+        Route::get('/profile', 'ProfileController@index')->name('profile');
         Route::post('/profile', 'ProfileController@update')->name('profile.submit');
-        // Route::get('/orders', 'AccountController@transactions')->name('profile.order');
+        Route::get('/orders', 'AccountController@transactions')->name('profile.order');
         Route::get('/orders/{reference}', 'AccountController@showTransaction')->name('profile.order.show');
         Route::get('/orders/{reference}/print', 'AccountController@printTransaction')->name('profile.order.print');
 

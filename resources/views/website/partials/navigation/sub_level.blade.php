@@ -1,14 +1,15 @@
 @foreach ($collection as $nav)
-    <a href="{{ $nav->url }}" class="dropdown-item">
-        @if($nav->icon)
-            <i class=" fa fa-fw fa-{{ $nav->icon }}"></i>
-        @endif
+<li class="menu-item">
+    <a href="{{ $nav->url }}">
+        
         {!! $nav->name !!}
-    </a>
+    
 
     @if (isset($navigation[$nav->id]))
-        <div class="dropdown-menu" aria-labelledby="{{ $nav->id }}">
+        
             @include('website.partials.navigation.sub_level', ['collection' => $navigation[$nav->id]])
-        </div>
+        
     @endif
+    </a>
+</li>
 @endforeach

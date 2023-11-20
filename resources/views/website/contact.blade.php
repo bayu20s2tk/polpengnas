@@ -19,7 +19,7 @@
             <div class="order-1 order-md-2 col-12 col-md-5 col-lg-6 contact-details">
                 <div class="border mb-3 p-3">
                     <div class="row">
-                        <div class="col-1 text-primary" data-icon="fa fa-fw fa-phone pr-3"></div>
+                        <div class="col-1 text-primary" data-icon=&#xe090;></div>
                         <div class="col"><strong>Phone </strong><br>
                             @if(isset($settings->telephone))  <a href="tel:{{ trim($settings->telephone) }}">{{ $settings->telephone }}</a> <br>@endif
                             @if(isset($settings->cellphone)) <a href="tel:{{ trim($settings->cellphone) }}">{{ $settings->cellphone }}</a>@endif
@@ -31,7 +31,7 @@
                 @if(isset($settings->email))
                 <div class="border mb-3 p-3">
                     <div class="row">
-                        <div class="col-1 text-primary" data-icon="fa fa-fw fa-envelope pr-3"></div>
+                        <div class="col-1 text-primary" data-icon=&#xe010;></div>
                         <div class="col">
                             <strong>Email </strong><br>
                             <a href="mailto:{{ trim($settings->email) }}">{{ $settings->email }}</a>
@@ -42,7 +42,7 @@
             @if(isset($settings->address))
                 <div class="border mb-3 p-3">
                     <div class="row">
-                        <div class="col-1 text-primary" data-icon="fa fa-fw fa-map-marked-alt pr-3"></div>
+                        <div class="col-1 text-primary" data-icon=&#xe01e;></div>
                         <div class="col">
                             <strong>Physical Address</strong>
                             <br>{{ $settings->address }}
@@ -53,7 +53,7 @@
             @if(isset($settings->po_box))
                 <div class="border mb-3 p-3">
                     <div class="row">
-                        <div class="col-1 text-primary" data-icon="fa fa-fw fa-print pr-3"></div>
+                        <div class="col-1 text-primary" data-icon=&#xe103; > </div>
                         <div class="col">
                             <strong>Postal Address</strong>
                             <br> {{ $settings->po_box }}

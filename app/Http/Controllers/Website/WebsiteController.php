@@ -32,8 +32,9 @@ class WebsiteController extends Controller
 
     protected $breadcrumbItems = [];
 
-    function __construct()
+    public function __construct()
     {
+        
         $this->findCurrentPage();
         $this->setPageBreadcrumb();
 
@@ -196,7 +197,7 @@ class WebsiteController extends Controller
         // when nothing - fall back to home
         if (!$page) {
             $page = Page::find(1);
-            if (config('app.env') == 'local' && !$page) {
+            if (config('.env') == 'local' && !$page) {
                 dd('Whoops. Page not found - please see if url is in the pages table');
             }
         }
@@ -205,6 +206,7 @@ class WebsiteController extends Controller
         $this->page = $page;
 
         // get all navigations -> ON parent_id
+        
         $this->parentPages = $page->getParentsAndYou();
 
         // get all navigations -> ON url_parent_id

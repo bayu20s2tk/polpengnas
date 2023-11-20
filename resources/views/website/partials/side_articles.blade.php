@@ -15,7 +15,7 @@
 
                                 </div>
                                 <div class="card-footer bg-white d-flex justify-content-between align-items-center border-top">
-                                    <div class="flex-grow-1" data-icon="far fa-calendar">
+                                    <div class="flex-grow-1" data-icon=&#xe023;>
                                         {!! $item->active_from->format('\<\s\t\r\o\n\g\>d\</\s\t\r\o\n\g\> M Y') !!}
                                     </div>
                                     <div class="text-right">

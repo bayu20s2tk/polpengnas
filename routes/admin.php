@@ -72,7 +72,9 @@ Route::group(['middleware' => ['auth', 'auth.admin'], 'prefix' => 'admin', 'name
     // pages
     Route::group(['prefix' => 'pages', 'namespace' => 'Pages'], function () {
         Route::get('/order/{type?}', 'OrderController@index');
+        Route::get('/orders', 'OrderController@index');
         Route::post('/order/{type?}', 'OrderController@updateOrder');
+        
     });
     Route::resource('pages', 'Pages\PagesController');
 

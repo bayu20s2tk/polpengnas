@@ -20,9 +20,9 @@ class UsersTableSeeder extends Seeder
             'firstname'         => 'Ben-Piet',
             'lastname'          => 'O\'Callaghan',
             'cellphone'         => '123456789',
-            'email'             => 'bpocallaghan@gmail.com',
+            'email'             => 'admin@gmail.com',
             'gender'            => 'ninja',
-            'password'          => bcrypt('ben'),
+            'password'          => bcrypt('admin'),
             'email_verified_at' => now()
         ]);
         $this->addAllRolesToUser($user);

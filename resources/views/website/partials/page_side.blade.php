@@ -4,7 +4,7 @@
             <h3 class="side-heading">Popular Links</h3>
             <ul class="list-unstyled">
                 @foreach($popularPages as $item)
-                    <li data-icon="far fa-angle-right"><a href="{{ $item->url }}">{!! $item->name !!}</a></li>
+                    <li data-icon=&#xe046;><a href="{{ $item->url }}">{!! $item->name !!}</a></li>
                 @endforeach
             </ul>
         </div>

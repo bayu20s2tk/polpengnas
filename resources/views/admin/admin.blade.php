@@ -18,7 +18,7 @@
         <meta property="og:description" name="og:description" content="{{ $description ?? config('app.description') }}">
         <meta property="og:image" name="og:image" content="{{ config('app.url') }}{{ $image ?? '/images/logo.png' }}">
 
-        <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+        <link rel="shortcut icon" type="image/ico" href="/images/favicon.jpg">
 
         <title>{{ $title ?? config('app.name') }}</title>
 

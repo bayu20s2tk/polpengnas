@@ -16,14 +16,14 @@
                             <div class="col-sm-6">
                                 <div class="card mb-3">
                                     <div class="card-header">
-                                        <h3 data-icon="fa fa-fw {{ $item->icon }}">{{ $item->name }} </h3>
+                                        <h3 data-icon=&#xe046;>{{ $item->name }} </h3>
                                     </div>
                                     <div class="card-body">
                                         <p>{{ $item->description }}</p>
                                     </div>
                                     <div class="card-footer">
                                         <a href="{{ $item->url }}">read more
-                                            <i data-icon="fa-angle-right"></i>
+                                            <i data-icon="&#x35;"></i>
                                         </a>
                                     </div>
                                 </div>

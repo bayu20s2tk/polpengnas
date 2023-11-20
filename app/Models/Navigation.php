@@ -126,6 +126,7 @@ class Navigation extends AdminModel
      */
     public function getParentsAndYou()
     {
+        
         return $this->getParentsRecursive($this, []);
     }
 

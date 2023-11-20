@@ -37,7 +37,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control {{ form_error_class('cellphone', $errors) }}" id="cellphone" name="cellphone" placeholder="Please insert the Cellphone" value="{{ ($errors->any()? old('cellphone') : $user->cellphone) }}">
                             {!! form_error_message('cellphone', $errors) !!}
-                            <div class="input-group-append"><span class="input-group-text"><i class="fa fa-fw fa-mobile-alt"></i></span></div>
+                            <div class="input-group-append"><span class="input-group-text"><i data-icon=&#xe090;></i></span></div>
                         </div>
                     </div>
 

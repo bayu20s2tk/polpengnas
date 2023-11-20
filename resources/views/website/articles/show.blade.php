@@ -70,7 +70,7 @@
                     @if($article->documents && $article->documents->count() > 0)
                         <div class="gallery mt-3 mb-3 p-3">
                             @foreach($article->documents as $item)
-                                <a href="{{ $item->url }}" target="_blank" title="{{ $item->name }}" data-icon="uil uil-file-download-alt">
+                                <a href="{{ $item->url }}" target="_blank" title="{{ $item->name }}" data-icon=&#xe092;>
                                     {{$item->name}}
                                 </a>
                                 @if(!$loop->last)

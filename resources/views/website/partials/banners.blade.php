@@ -1,5 +1,5 @@
 @if((isset($showPageBanner) && $showPageBanner === true) || !isset($showPageBanner))
-    <div class="banner-container mb-5">
+    <!-- <div class="banner-container mb-5">
         <h2 class="d-none">Banner</h2>
         <div id="banner-carousel" class="carousel slide banners" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -29,5 +29,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+    </div> -->
+    <!-- BANNER POLPENNAS -->
+    
+                                        
+                                    
+<!-- BANNER POLPENNAS -->
 @endif
