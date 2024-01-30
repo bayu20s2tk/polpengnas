@@ -314,7 +314,7 @@
                                                         </div>
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
-                                                    @include('website.pages.page_components', ['item' => $article ])
+                                                    
                                                     <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
                                                         <div class="gdlr-core-item-list-wrap gdlr-core-column-30">
                                                             <div class="gdlr-core-item-list-inner gdlr-core-item-mglr">
