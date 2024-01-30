@@ -315,6 +315,7 @@
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
                                                     @extends('website.website')
+                                                    @section('content')
                                                     @include('website.partials.page_header')
                                                     @if($article->cover_photo)
                                                         <figure>
