@@ -314,6 +314,7 @@
                                                         </div>
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
+                                                    @include('website.partials.page_header')
                                                     @if($article->cover_photo)
                                                         <figure>
                                                             <a href="{{ $article->cover_photo->url }}" title="{{ $article->cover_photo->name }}" data-lightbox="cover" data-caption="{{ $article->cover_photo->name }}">
