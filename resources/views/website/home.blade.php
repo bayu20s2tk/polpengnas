@@ -314,17 +314,7 @@
                                                         </div>
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
-                                                    @extends('website.website')
-                                                    @section('content')
-                                                    @include('website.partials.page_header')
-                                                    @if($article->cover_photo)
-                                                        <figure>
-                                                            <a href="{{ $article->cover_photo->url }}" title="{{ $article->cover_photo->name }}" data-lightbox="cover" data-caption="{{ $article->cover_photo->name }}">
-                                                            <img src="{{ $article->cover_photo->url }}" class="img-fluid">
-                                                            </a>
-                                                        <figcaption>{{ $article->cover_photo->name }}</figcaption>
-                                                    </figure>
-                                                    @endif
+                                                    
                                                     <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
                                                         <div class="gdlr-core-item-list-wrap gdlr-core-column-30">
                                                             <div class="gdlr-core-item-list-inner gdlr-core-item-mglr">
