@@ -321,11 +321,7 @@
                                                                 
                                                                 <div class="gdlr-core-blog-grid ">
                                                                     <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                                    @if($article->cover_photo)
-                                                                    <a href="{{ $article->cover_photo->url }}" title="{{ $article->cover_photo->name }}" data-lightbox="cover" data-caption="{{ $article->cover_photo->name }}">
-                                                                            <img src="{{ $article->cover_photo->url }}" width="700" height="430" alt="" />
-                                                                        </a>
-                                                                    @endif
+                                                                    
                                                                     </div>
                                                                     <div class="gdlr-core-blog-grid-content-wrap">
                                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
