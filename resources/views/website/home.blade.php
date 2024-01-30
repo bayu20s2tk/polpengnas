@@ -314,14 +314,25 @@
                                                         </div>
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
+                                                    @if($article->cover_photo)
+                                                        <figure>
+                                                            <a href="{{ $article->cover_photo->url }}" title="{{ $article->cover_photo->name }}" data-lightbox="cover" data-caption="{{ $article->cover_photo->name }}">
+                                                            <img src="{{ $article->cover_photo->url }}" class="img-fluid">
+                                                            </a>
+                                                        <figcaption>{{ $article->cover_photo->name }}</figcaption>
+                                                    </figure>
+                                                    @endif
                                                     <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
                                                         <div class="gdlr-core-item-list-wrap gdlr-core-column-30">
                                                             <div class="gdlr-core-item-list-inner gdlr-core-item-mglr">
+                                                                
                                                                 <div class="gdlr-core-blog-grid ">
                                                                     <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                                        <a href="#">
-                                                                            <img src="images/home/slide-5b.jpg" width="700" height="430" alt="" />
+                                                                    @if($article->cover_photo)
+                                                                    <a href="{{ $article->cover_photo->url }}" title="{{ $article->cover_photo->name }}" data-lightbox="cover" data-caption="{{ $article->cover_photo->name }}">
+                                                                            <img src="{{ $article->cover_photo->url }}" width="700" height="430" alt="" />
                                                                         </a>
+                                                                    @endif
                                                                     </div>
                                                                     <div class="gdlr-core-blog-grid-content-wrap">
                                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
