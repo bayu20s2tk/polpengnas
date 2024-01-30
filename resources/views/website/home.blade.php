@@ -45,7 +45,7 @@
                                         </div>
                                     
 <!-- BANNER POLPENNAS -->
-@endif
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -314,22 +314,7 @@
                                                         </div>
                                                         <a class="gdlr-core-block-item-read-more" href="/berita" target="_self" id="a_1dd7_5">Read All News</a>
                                                     </div>
-                                                    @if($article->photos && $article->photos->count() > 1)
-                        <div class="gallery mt-3 mb-3 p-3">
-                            <div class="row">
-                                @foreach($article->photos->where('is_cover', 0)->sortBy('list_order') as $item)
-                                    <div class="col-6 col-md-4">
-                                        <figure>
-                                            <a href="{{ $item->url }}" rel="group" title="{{ $item->name }}" data-lightbox="gallery" class="cover">
-                                                <img class="img-fluid" src="{{ $item->thumbUrl }}">
-                                            </a>
-                                            <figcaption>{!! $item->name !!}</figcaption>
-                                        </figure>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    @endif
+                                                    @include('website.pages.page_components', ['item' => $article ])
                                                     <div class="gdlr-core-blog-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
                                                         <div class="gdlr-core-item-list-wrap gdlr-core-column-30">
                                                             <div class="gdlr-core-item-list-inner gdlr-core-item-mglr">
